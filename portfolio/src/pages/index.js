@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '@/components/Layout';
+import * as Icons  from '@/components/icon';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -23,15 +24,21 @@ export default function Home() {
               <Animated  text="Turning Vision Into Reality With Code And Design." className=' !text-6xl text-left' />
               <p className='my-4 text-base font-extra'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
                 Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
-              <div className="flex space-x-4">
+              <div className="flex items-center self-start mt-2 space-x-4">
                 <Link href="/" target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 
-                  rounded-lg text-lg font-semibold ring-2 ring-pink-500 ring-inset"
-                >Resume</Link>
+                  className="flex items-center bg-indigo-500 text-dark p-2.5 px-6
+                  rounded-lg text-lg font-semibold ring-2 ring-blue-500 ring-inset
+                  hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  download={true}
+                >Resume <Icons.DownloadIcon className={"w-6 ml-3"} />
+                </Link>
                 <Link href="/" target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 
-                  rounded-lg text-lg font-semibold ring-2 ring-pink-500 ring-inset"
-                >Projects</Link>
+                  className="flex items-center bg-light text-dark p-2.5 px-6
+                  rounded-lg text-lg font-semibold ring-2 ring-blue-500 ring-inset
+                  hover:bg-indigo-500 hover:text-light border-2 border-solid border-transparent hover:border-dark"
+                  
+                >Projects <Icons.ProjectIcon  className={"w-6 ml-2"} />
+                </Link>
               </div>
             </div>
           </div>
