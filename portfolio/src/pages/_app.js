@@ -1,4 +1,5 @@
 // pages/_app.js
+import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 import '@/styles/globals.css';
 import {Montserrat} from 'next/font/google';
@@ -23,6 +24,7 @@ function MyApp({Component, pageProps}) {
 
 
            <Component {...pageProps} />
+           <Footer />
          </main></>
 
 
