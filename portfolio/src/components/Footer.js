@@ -1,6 +1,6 @@
 import react from "react";
 import Link from "next/link"
-import Layout from "./Layout";
+import Layout from '@/components/Layout';
 
 
  const Footer = () => {

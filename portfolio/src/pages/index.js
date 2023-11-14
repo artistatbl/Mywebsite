@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '@/components/Layout';
+import HireMe from '@/components/HireMe';
 import * as Icons  from '@/components/icon';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -43,6 +44,7 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <HireMe />
       </main>
     </>
   )
