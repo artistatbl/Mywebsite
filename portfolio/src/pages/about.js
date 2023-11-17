@@ -8,6 +8,8 @@ import Head from 'next/head'
 import React, { useEffect, useRef } from 'react';
 
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import Skill from '@/components/Skill';
+import Education from '@/components/Education';
 
 
 const AnimatedNumbers = ({value}) => {
@@ -15,7 +17,7 @@ const AnimatedNumbers = ({value}) => {
 
 
 	const motionValue = useMotionValue(0);
-	const springValue =  useSpring(motionValue, { stiffness: 5000})
+	const springValue =  useSpring(motionValue, { stiffness:500, duration: 5000})
 	const isInView = useInView(ref, {once: true});
 
 	useEffect(() =>{
@@ -111,18 +113,17 @@ const about = () => {
 
 						</h2>
 					</div>
-					
 
 					
 				</div>
 
-
-
-
-				
-		
   
 			</div>
+
+
+			<Skill />
+
+			<Education />
 
 			</Layout>
 
