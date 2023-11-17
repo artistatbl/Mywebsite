@@ -2,7 +2,7 @@ import Animated from '@/components/Animated'
 import Layout from '@/components/Layout'
 import Image from 'next/image';
 
-import profilePic from "../../images/profile/software Enginer.png";
+import profilePic from "../../images/profile/blob.png";
 import Head from 'next/head'
 
 import React, { useEffect, useRef } from 'react';
