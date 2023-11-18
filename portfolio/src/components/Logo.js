@@ -11,7 +11,7 @@ function Logo() {
         <div className='flex items-center justify-center mt-2'>
             <MotionLink href="/">
                 
-                    <Image src={profilePic} className='w-20 h-20 bg-indigo-100 flex items-center justify-center rounded-full' />
+                    <Image src={profilePic} className='w-24 h-24  flex items-center justify-center rounded-full' />
                     
                 
             </MotionLink>

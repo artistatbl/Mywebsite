@@ -4,7 +4,7 @@ import Lilcon from "./Lilcon"
 
 
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ Position, company, companyLink, time, address, work }) => {
 	const ref = useRef(null);
 	return (
 	  <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
@@ -15,13 +15,20 @@ const Details = ({ type, time, place, info }) => {
 	    transition={{duration:0.5, type:"spring"}}
 	    >
 		 <h3 className='capitalize font-bold text-2xl'>
-		  {type}
+		   {Position}&nbsp;
+		   <a
+			href={companyLink}
+			target="_blank"
+			className='text-blue-500 capitalize'
+		   >
+			@{company}
+		   </a>
 		 </h3>
 		 <span className='capitalize font-medium text-dark/70'>
-		   {time} | {place}
+		   {time} | {address}
 		 </span>
 		 <p className='font-medium w-full '>
-		   {info}
+		   {work}
 		 </p>
 	    </motion.div>
 	  </li>
@@ -30,7 +37,7 @@ const Details = ({ type, time, place, info }) => {
    
 
 
-const Education = () =>{
+const Experience = () =>{
 	const ref = useRef(null)
 	const {scrollYProgress} = useScroll(
 
@@ -41,7 +48,7 @@ const Education = () =>{
 	)
 	return (
 		<div className='my-64'> 
-		<h2 className='font-bold text-8xl mb-32 text-center w-full'> Education
+		<h2 className='font-bold text-8xl mb-32 text-center w-full'> Experience
 			
 			
 			</h2>
@@ -51,46 +58,25 @@ const Education = () =>{
 				style={{scaleY: scrollYProgress}}
 				 className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top ' />
 				<ul className='w-full flex flex-col items-start justify-between ml-4'>
-				<Details
+					<Details
 
-type="Bachelor Of Software Enginerr" place="Manchester Metropolition University"
-
-time=" 2021-2024"  
-info="is simply dummy text of the printing and typesetting industry.
+Position="Shift Manager" company="BurgerKing"
+companyLink=""
+time=" 2019 - present"  address="Warrignton Brigde str"
+work="is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
   when an unknown printer took a galley of type and scrambled it to make a type specimen book"
 					
 					
 					
-					
-					
-					
-					
 					/>
-
 
 <Details
 
-type="Bachelor Of Software Enginerr" place="Manchester Metropolition University"
-
-time=" 2021-2024"  
-info="is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-					
-					
-					
-					
-					
-					
-					
-					/>
-<Details
-
-type="Bachelor Of Software Enginerr" place="Manchester Metropolition University"
-
-time=" 2021-2024"  
-info="is simply dummy text of the printing and typesetting industry.
+Position="Shift Manager" company="BurgerKing"
+companyLink=""
+time=" 2019 - present"  address="Warrignton Brigde str"
+work="is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
   when an unknown printer took a galley of type and scrambled it to make a type specimen book"
 					
@@ -111,4 +97,4 @@ info="is simply dummy text of the printing and typesetting industry.
 	)
 }
 
-export default Education;
+export default Experience;

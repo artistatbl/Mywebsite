@@ -32,10 +32,10 @@ const NavBar = () => {
      return (
           <header className='w-full px-32 py-10 font-bold flex items-center justify-between border-b-2 border-solid border-gray-300 '>
                <nav>
-                    <CustomLink href="/" title="Home" className='mr-4  border-gray-500 bg-gray-500 p-2.5 px-6 rounded-xl'/>
-                    <CustomLink href="/about" title="About" className='mx-4  border-gray-500 bg-gray-500 p-2.5 px-6 rounded-xl'/>
-                    <CustomLink href="/projects" title="Projects" className='mx-4  border-gray-500 bg-gray-500 p-2.5 px-6 rounded-xl'/>
-                    <CustomLink href="/skills" title="Skills" className='ml-4  border-gray-500 bg-gray-500 p-2.5 px-6 rounded-xl'/>
+                    <CustomLink href="/" title="Home" className='mr-4  '/>
+                    <CustomLink href="/about" title="About" className='mx-4  '/>
+                    <CustomLink href="/projects" title="Projects" className='mx-4 '/>
+                    <CustomLink href="/skills" title="Skills" className='ml-4 '/>
                </nav>
 
                <nav className='flex items-center justify-center flex-wrap'>
