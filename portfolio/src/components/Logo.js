@@ -13,7 +13,7 @@ function Logo() {
                 
             {/* <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.4rem] bg-dark rounded-br-2xl' /> */}
 
-                    <Image src={profilePic} className='w-20 h-20 bg-gray-500 flex items-center justify-center rounded-full' />
+                    <Image src={profilePic} className='w-24 h-24  flex items-center justify-center rounded-full' />
                     
                  
             </MotionLink>
