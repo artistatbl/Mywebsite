@@ -9,11 +9,11 @@ const MotionLink = motion(Link);
 function Logo() {
     return (
         <div className='flex items-center justify-center mt-2 relative'>
-            <MotionLink href="/">
+            <MotionLink href="/" className=''>
                 
             {/* <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.4rem] bg-dark rounded-br-2xl' /> */}
 
-                    <Image src={profilePic} className='w-24 h-24  flex items-center justify-center rounded-full' />
+                    <Image src={profilePic} className='w-24 h-24 bg-gray-900 flex text-light items-center justify-center rounded-full dark:border-light border border-solid border-transparent' />
                     
                  
             </MotionLink>
