@@ -2,25 +2,46 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
-import Image  from 'next/image'
-import  Animated from '@/components/Animated'
-import { GithubIcon } from '@/components/icon'
-import Project1  from "../../images/ProjectPic/train.png"
-import Project2 from "../../images/ProjectPic/article.png"
+import Image  from 'next/image';
+import  Animated from '@/components/Animated';
+import { GithubIcon } from '@/components/icon';
+import Project1  from "../../images/ProjectPic/train.png";
+import Project2 from "../../images/ProjectPic/article.png";
+import { motion } from 'framer-motion';
+
+
+const FramerImage = motion(Image);
 
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
 	return (
 		<article className='w-full flex items-center justify-between relative
-		rounded-3xl  rounded-br-2xl border border-solid border-dark bg-light shadown-2xl p-8'>
+		rounded-3xl  rounded-br-2xl border border-solid border-dark bg-light shadown-2xl p-8 dark:bg-dark dark:border-light'>
 
-              <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.4rem] bg-dark rounded-br-2xl' />
+              <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.4rem] bg-dark rounded-br-2xl dark:bg-light' />
 
-			<Link href={link} target="_blank"
-			className='w-1/2 cursor-pointer overflow-hidden rounded-lg'
-			>
-				<Image src={img} alt={title} className="w-full h-auto" />
-			</Link>
+		    <Link
+  href={link} 
+  target="_blank"
+  className='w-1/2 cursor-pointer overflow-hidden rounded-lg'
+>
+  <motion.div
+    whileHover={{ y: 10 }}
+    whileTap= {{scale: 1}}
+    transition={{ duration: 0.5 }}
+  >
+    <FramerImage 
+      src={img} 
+      alt={title} 
+      className="  w-full h-auto overflow-x-auto" 
+	 priority
+	 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+    />
+  </motion.div>
+  </Link>
+
+
+
 			<div className='w-1/2 flex flex-col items-start justify-between pl-6'>
 				<span className='text-primary font-medium text-xl'>{type}</span>
 				<Link href={link} target="_blank" className='hover:underline underline-offset-2'>
@@ -46,18 +67,20 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 const Project = ({title, type, img, link, github}) => {
 	return (
 		<article className='w-full flex flex-col items-cneter  relative justify-content rounded-2xl 
-		border rounded-br-2xl border-solid border-dark bg-light p-6 
+		border rounded-br-2xl border-solid border-dark bg-light p-6  dark:bg-dark dark:border-light
 		
 		'>
-							<div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.1rem] bg-dark rounded-br-2xl' />
+							<div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.1rem] bg-dark rounded-br-2xl dark:bg-light' />
 
 				<Link href={link} target="_blank"
-			className='w-full cursor-pointer overflow-hidden rounded-lg'
+			className='w-full cursor-pointer overflow-hidden rounded-lg '
 			>
-				<Image src={img} alt={title} className="w-full h-auto" />
+				<Image src={img} alt={title} className="w-full h-auto" 
+				        priority
+					   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"/>
 			</Link>
 			<div className='w-full flex flex-col items-start justify-between mt-4'>
-				<span className='text-primary font-medium text-xl'>{type}</span>
+				<span className='text-primary font-medium text-xl dark:text-light'>{type}</span>
 				<Link href={link} target="_blank" className='hover:underline underline-offset-2'>
 					<h2 className='my-2 w-full text-left text-3xl font-bold'>{title}</h2>
 				</Link>

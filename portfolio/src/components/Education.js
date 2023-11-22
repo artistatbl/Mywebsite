@@ -41,7 +41,7 @@ const Education = () =>{
 	)
 	return (
 		<div className='my-64'> 
-		<h2 className='font-bold text-8xl mb-32 text-center w-full'> Education
+		<h2 className='font-bold text-8xl mb-32 text-center w-full dark:text-light'> Education
 			
 			
 			</h2>
@@ -49,8 +49,8 @@ const Education = () =>{
 
 				<motion.div
 				style={{scaleY: scrollYProgress}}
-				 className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top ' />
-				<ul className='w-full flex flex-col items-start justify-between ml-4'>
+				 className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-blue-300 ' />
+				<ul className='w-full flex flex-col items-start justify-between ml-4 dark:text-light'>
 				<Details
 
 type="Bachelor Of Software Enginerr" place="Manchester Metropolition University"

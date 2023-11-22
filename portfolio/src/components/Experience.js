@@ -14,20 +14,20 @@ const Details = ({ Position, company, companyLink, time, address, work }) => {
 	    whileInView={{y:0}}
 	    transition={{duration:0.5, type:"spring"}}
 	    >
-		 <h3 className='capitalize font-bold text-2xl'>
+		 <h3 className='capitalize font-bold text-2xl dark:text-light'>
 		   {Position}&nbsp;
 		   <a
 			href={companyLink}
 			target="_blank"
-			className='text-blue-500 capitalize'
+			className='text-pink-500 capitalize dark:text-blue-500'
 		   >
 			@{company}
 		   </a>
 		 </h3>
-		 <span className='capitalize font-medium text-dark/70'>
+		 <span className='capitalize font-medium text-dark/70 dark:text-light/70'>
 		   {time} | {address}
 		 </span>
-		 <p className='font-medium w-full '>
+		 <p className='font-medium w-full dark:text-light '>
 		   {work}
 		 </p>
 	    </motion.div>
@@ -48,7 +48,7 @@ const Experience = () =>{
 	)
 	return (
 		<div className='my-64'> 
-		<h2 className='font-bold text-8xl mb-32 text-center w-full'> Experience
+		<h2 className='font-bold text-8xl mb-32 text-center w-full dark:text-light'> Experience
 			
 			
 			</h2>
@@ -56,8 +56,8 @@ const Experience = () =>{
 
 				<motion.div
 				style={{scaleY: scrollYProgress}}
-				 className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top ' />
-				<ul className='w-full flex flex-col items-start justify-between ml-4'>
+				 className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light' />
+				<ul className='w-full flex flex-col items-start justify-between ml-4 dark:text-light'>
 					<Details
 
 Position="Shift Manager" company="BurgerKing"

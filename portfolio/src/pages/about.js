@@ -54,8 +54,8 @@ const about = () => {
 			<Layout className='pt-16'>
 			<Animated  text="Passion Fuels Purpose!"  className='mb-16'/>
 			<div className='grid w-full grid-cols-8 gap-16'>
-			  <div className='col-span-3 flex flex-col items-start justify-start'>
-				  <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'> Biography</h2>
+			  <div className='col-span-3 flex flex-col items-start justify-start dark:text-light'>
+				  <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'> Biography</h2>
 			  
 
 			  <p className='font-medium'>
@@ -84,12 +84,16 @@ const about = () => {
 			bg-blue-900 p-8'
 			>
 
-				<div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.1rem] bg-dark' />
-				<Image src={profilePic} alt="jeandaly" className='w-full h-auto rounded-2xl' />
+				<div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.1rem] bg-dark ' />
+				<Image src={profilePic} alt="jeandaly" className='w-full h-auto rounded-2xl'
+				        priority
+					   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+				
+				/>
 
 				</div>
 
-				<div className='col-span-2 flex flex-col items-end  justify-around'>
+				<div className='col-span-2 flex flex-col items-end  justify-around dark:text-light'>
 
 					<div className=' flex flex-col items-end justify-center'> 
 						<span className='inline-bloc text-7xl font-bold'>

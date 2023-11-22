@@ -1,3 +1,4 @@
+import Cursor from '@/components/hooks/cursor'
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
 
@@ -17,6 +18,7 @@ export default function Document() {
         
         
         `}
+   
 
         </Script>
         <Main />
