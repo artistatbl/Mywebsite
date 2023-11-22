@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 import profilePic from "../../images/profile/blob.png";
 import Animated from '@/components/Animated';
-import Cursor from '@/components/hooks/cursor';
 import ParticlesContainier from '@/components/hooks/ParticlesContainer';
 
 import { motion } from 'framer-motion';

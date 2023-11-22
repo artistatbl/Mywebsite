@@ -1,7 +1,7 @@
 import react from "react";
 import Link from "next/link"
 import Layout from '@/components/Layout';
-import Cursor from "./hooks/cursor";
+
 
 
  const Footer = () => {
