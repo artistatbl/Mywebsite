@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import { motion } from "framer-motion"
+import React from 'react';
+import Link from 'next/link';
+import { motion } from "framer-motion";
 import Image from 'next/image';
 import profilePic from "../../images/profile/log.png";
 
@@ -10,11 +10,11 @@ function Logo({ darkMode }) {
   const borderColorClass = darkMode ? 'border-light' : 'border-dark';
 
   return (
-    <div className='flex items-center justify-center mt-2 relative'>
+    <div className='flex items-center justify-center mt-2 '>
       <MotionLink href="/" className=''>
         <Image
           src={profilePic}
-          className={`w-24 h-24 flex text-light items-center justify-center dark:border-light rounded-full border border-solid ${borderColorClass}`}
+          className={`w-20 h-20 flex text-light  bg-blue-500 items-center justify-center dark:border-amber-500 rounded-full border border-amber-600 ${borderColorClass}`}
         />
       </MotionLink>
     </div>

@@ -28,7 +28,7 @@ const ParticlesContainier = () => {
 				value:''
 			},
 		},
-		fpsLimit: 120,
+		fpsLimit: 200,
 		interactivity:{
 			events: {
 				onclick: {
@@ -37,13 +37,15 @@ const ParticlesContainier = () => {
 				},
 				onHover:{
 					enable: true,
-					mode: 'repulse',
+					mode: 'pulse',
+					size: 8,
+					duration: 1
 				},
 				resize: true,
 			},
 			modes:{
 				push:{
-					quantity: 90
+					quantity: 150
 
 				},
 				repulse: {
@@ -58,10 +60,10 @@ const ParticlesContainier = () => {
 				value: '#e68e2e',
 			},
 			links:{
-				color: '#FF5733',
+				color: '#FFA600',
 				distance: 200,
 				enable: true,
-				opacity: 0.8,
+				opacity: 0.9,
 				width: 1.5
 			},
 			collisions: {
@@ -74,7 +76,7 @@ const ParticlesContainier = () => {
 					default:'bounce'
 				},
 				random: false,
-				speed: 1,
+				speed: 1.5,
 				straight: false,
 			},
 			number: {
@@ -88,7 +90,7 @@ const ParticlesContainier = () => {
 				value: 0.5,
 			},
 			shape:{
-				type: 'square'
+				type: 'traingle'
 			},
 			size: {
 				value: {min: 2, max: 5},
