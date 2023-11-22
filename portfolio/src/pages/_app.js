@@ -1,7 +1,6 @@
 // pages/_app.js
 import Experience from '@/components/Experience';
 import Footer from '@/components/Footer';
-import Cursor from '@/components/hooks/cursor';
 import NavBar from '@/components/NavBar';
 import '@/styles/globals.css';
 import {Montserrat} from 'next/font/google';
