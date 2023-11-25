@@ -6,6 +6,8 @@ import '@/styles/globals.css';
 import {Montserrat} from 'next/font/google';
 import Head from "next/head";
 import ParticlesContainier from '@/components/hooks/ParticlesContainer';
+import { AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 
 // Define the Montserrat font with the desired subsets
@@ -15,6 +17,7 @@ const montserrat = Montserrat({
 });
 
 function MyApp({Component, pageProps}) {
+  const router = useRouter();
      return (
 
       <>
@@ -30,7 +33,9 @@ function MyApp({Component, pageProps}) {
          
 
 
-           <Component {...pageProps} />
+           <AnimatePresence mode="wait">
+            <Component  key={router.asPath} {...pageProps} />
+           </AnimatePresence>
            
            {/* <Experience/> */}
            <Footer />

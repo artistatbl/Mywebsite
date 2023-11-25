@@ -176,7 +176,6 @@ const NavBar = () => {
                          <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
                          <CustomMobileLink href="/about" title="About" className=' ' toggle={handleClick} />
                          <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick}/>
-                         <CustomMobileLink href="/articles" title="Articles" className=' ' toggle={handleClick}/>
                          
                     </nav>
 
