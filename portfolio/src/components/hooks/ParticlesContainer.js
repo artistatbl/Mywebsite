@@ -5,7 +5,7 @@ import React, {useCallback} from 'react';
 
 
 
-const ParticlesContainier = () => {
+const ParticlesContainer = () => {
 	// init 
 
 	const particlesInit = useCallback(async(engine)=> {
@@ -102,4 +102,4 @@ const ParticlesContainier = () => {
 	);
 };
 
-export default ParticlesContainier
+export default ParticlesContainer

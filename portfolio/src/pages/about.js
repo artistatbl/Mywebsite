@@ -2,7 +2,7 @@ import Animated from '@/components/Animated'
 import Layout from '@/components/Layout'
 import Image from 'next/image';
 
-import profilePic from "../../images/profile/remover.png";
+import profilePic from "../../images/profile/profile.png";
 import Head from 'next/head'
 
 import React, { useEffect, useRef } from 'react';
@@ -12,7 +12,6 @@ import Skill from '@/components/Skill';
 import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import Transistion from '@/components/Transistion';
-import ParticlesContainier from '@/components/hooks/ParticlesContainer';
 
 
 const AnimatedNumbers = ({value}) => {
