@@ -5,7 +5,7 @@ import NavBar from '@/components/NavBar';
 import '@/styles/globals.css';
 import {Montserrat} from 'next/font/google';
 import Head from "next/head";
-import ParticlesContainier from '@/components/hooks/ParticlesContainer';
+//import ParticlesContainier from '@/components/hooks/ParticlesContainer';
 import { AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 

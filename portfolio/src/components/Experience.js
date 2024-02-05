@@ -1,7 +1,6 @@
 import {motion,useScroll} from "framer-motion"
 import React, { useEffect, useRef } from 'react';
 import Lilcon from "./Lilcon"
-import ParticlesContainier from "./hooks/ParticlesContainer";
 
 
 

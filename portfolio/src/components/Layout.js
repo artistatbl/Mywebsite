@@ -1,6 +1,5 @@
 import React from 'react';
 import { Analytics } from '@vercel/analytics/react';
-import ParticlesContainier from './hooks/ParticlesContainer';
 
 
 const Layout = ({children, className=""}) => {

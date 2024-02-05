@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import useThemeSwitcher from './hooks/useThemeSwitcher';
-import ParticlesContainier from './hooks/ParticlesContainer';
+// import ParticlesContainier from './hooks/ParticlesContainer';
 
 const CustomLink = ({
      href,

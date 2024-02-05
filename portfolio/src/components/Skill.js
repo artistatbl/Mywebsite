@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import ParticlesContainier from './hooks/ParticlesContainer'
+// import ParticlesContainier from './hooks/ParticlesContainer'
 
 
 
