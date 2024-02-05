@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.9",
     "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
