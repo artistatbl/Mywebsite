@@ -47,7 +47,7 @@ const about = () => {
 
 		<>
 		<Head>
-			<title>CodeBucks | About paage</title>
+			<title>Jean Daly | About Page</title>
 			<meta name='description' content='any description' />
 
 		</Head>
